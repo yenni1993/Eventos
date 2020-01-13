@@ -63,7 +63,7 @@ namespace CapacitacionYenni
                         iMinuto = (dtFechaActual - dtFechaEvento).Minutes;
                         iHora = (dtFechaActual - dtFechaEvento).Hours;
                         iDia = (dtFechaActual - dtFechaEvento).Days;
-                        iMes = ((((dtFechaActual.Year - dtFechaEvento.Year)) * 12) + dtFechaActual.Month - dtFechaEvento.Month);
+                        iMes = Math.Abs((((dtFechaActual.Year - dtFechaEvento.Year)) * 12) + dtFechaActual.Month - dtFechaEvento.Month);
 
                         if (iMinuto > 0 && iMinuto <= 59)
                         {
